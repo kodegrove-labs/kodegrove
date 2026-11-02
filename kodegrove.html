@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodeGrove | Introducing YantraFox</title>
+    <!-- FontAwesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+            --social-hover: #ffffff;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 90%;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .logo-container {
+            margin-bottom: 2rem;
+        }
+
+        .startup-logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            color: var(--text-secondary);
+        }
+
+        .startup-logo span {
+            color: var(--text-primary);
+        }
+
+        .announcement-card {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .badge {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 0.4rem 1.2rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 0 0 1.5rem 0;
+            letter-spacing: -0.02em;
+        }
+
+        .description {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 0 auto 2.5rem auto;
+            max-width: 520px;
+            text-align: inherit;
+        }
+
+        .features-list {
+            text-align: left;
+            margin: 0 auto 2.5rem auto;
+            max-width: 480px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .features-list li {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        .social-links {
+            margin-top: 2.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 2rem;
+        }
+
+        .social-icon {
+            color: var(--text-secondary);
+            font-size: 1.3rem;
+            transition: color 0.2s ease, transform 0.2s ease;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: var(--social-hover);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <div class="startup-logo">Kode<span>Grove</span></div>
+        </div>
+
+        <main class="announcement-card">
+            <span class="badge">Platform Launch</span>
+            <h1>Meet YantraFox</h1>
+            
+            <p class="description">
+                KodeGrove is proud to introduce <strong>YantraFox</strong> a comprehensive, intelligent automation and operations ecosystem. Engineered to remove the friction from deployment workflows, monitor live systems seamlessly, and handle data synchronization across unorganised frameworks.
+            </p>
+
+            <ul class="features-list">
+                <li><strong>Next-Gen Automation:</strong> Streamline unorganised operational pipelines.</li>
+                <li><strong>Real-Time Transparency:</strong> Live monitoring, reporting, and activity logs.</li>
+                <li><strong>Developer-First Architecture:</strong> Scalable integration built on top-tier security standards.</li>
+            </ul>
+
+            <a href="https://yantrafox.com" target="_blank" class="cta-button">Explore yantrafox.com</a>
+
+            <div class="social-links">
+                <a href="https://x.com" target="_blank" class="social-icon" title="Follow KodeGrove on X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon" title="Connect on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" class="social-icon" title="Check our GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2026 KodeGrove. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
